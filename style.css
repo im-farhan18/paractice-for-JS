@@ -1,8 +1,11 @@
-.newclass {
-    background-color: deepskyblue;
-    color: orangered;
-}
-.parag{
-    background-color: blue;
+div{
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+
 }
