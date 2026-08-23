@@ -1,7 +1,8 @@
 #include <iostream>
+#define PI 3.14
 using namespace std;
 
 int main() {
-    cout << "0";
+    cout << PI;
     return 0;
 }
