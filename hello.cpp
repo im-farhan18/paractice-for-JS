@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "we are here for conquer";
+    cout << "we are here for conquer\n";
     return 0;
 }
