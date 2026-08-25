@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "we are here for conquer\n";
+    cout << "*******\n******\n*****\n****\n***\n**\n*";
     return 0;
 }
