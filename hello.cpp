@@ -1,27 +1,15 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main()
 {
-    float pen;
-    float pencil;
-    float eraser;
+    float radius;
+    float PI = 22/7;
 
-    cout << "Enter the Amount of pen :";
-    cin >> pen;
+    cout << "Enter the Radius";
+    cin >> radius;
 
-    cout << "Enter the Amount of pencil :";
-    cin >> pencil;
-
-    cout << "Enter the Amount of Eraser :";
-    cin >> eraser;
-
-    float amount = pen + pencil + eraser;
-
-    float toal_amount = amount + (0.18 * amount);
-
-    cout << "your tatal BILL with GST is $" << toal_amount  << endl;
+    cout << "the total area of circle is :" << (PI * radius * radius) << endl;
 
     return 0;
 };
