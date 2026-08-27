@@ -3,7 +3,10 @@ using namespace std;
 
 int main()
 {
-    float PI = 3.14;
-    cout<< (23.5 + 2 + 'A');
+    int a = 3;
+    a++;
+
+    cout<<"a = "<<a<<endl;
+
     return 0;
 };
