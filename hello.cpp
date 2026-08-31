@@ -3,13 +3,12 @@ using namespace std;
 
 int main()
 {
-    int a = 10;
-    int b1 = a++;
-    int b2 = ++a;
+    int x = 2, y = 5;
 
-    cout<<"a ="<<a<<endl;
-        cout<<"b1 ="<<b1<<endl;
-            cout<<"b2 ="<<b2<<endl;
+    int exp1 = (x * y /x);
+    int exp2 = (x)
+
+
 
 
 
