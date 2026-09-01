@@ -3,13 +3,17 @@ using namespace std;
 
 int main()
 {
-    int x = 2, y = 5;
+    int age;
 
-    int exp1 = (x * y /x);
-    int exp2 = (x * (y / x));
+    cout<<"Enter your age :";
+    cin>>age;
 
-    cout<<exp1<<endl;
-        cout<<exp2<<endl;
+    if(age >= 18) {
+        cout<<"Conratulation !"<< endl<<"you are eligble for PAN card"<<endl;
+    }
+    else{
+        cout<<"Sorry"<<endl<<"you are not eligble for PAN card"<<endl;
+    }
 
 
 
