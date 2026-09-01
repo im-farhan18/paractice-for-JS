@@ -3,22 +3,32 @@ using namespace std;
 
 int main()
 {
-    int num;
+    int marks;
 
-    cout << "Enter the number :";
-    cin >> num;
-    ;
+    cout << "Enter your marks :";
+    cin >> marks;
 
-    if (num % 2 == 0)
+    if (marks >= 95 || marks <= 100)
     {
-
-        cout << num << " is a even number" << endl;
+        cout << "grade : A++" << endl;
     }
 
+    else if (marks >= 80)
+    {
+        cout << "grade : A+" << endl;
+    }
+
+    else if (marks >= 70)
+    {
+        cout << "grade : A" << endl;
+    }
+    else if (marks >= 60)
+    {
+        cout << "grade : B+" << endl;
+    }
     else
     {
-        cout << num << " is a odd number" << endl;
+        cout << "Fail" << endl;
     }
-
     return 0;
 };
