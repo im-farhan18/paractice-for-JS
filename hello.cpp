@@ -3,22 +3,22 @@ using namespace std;
 
 int main()
 {
-    int age;
+    int num;
 
-    cout<<"Enter your age :";
-    cin>>age;
+    cout << "Enter the number :";
+    cin >> num;
+    ;
 
-    if(age >= 18) {
-        cout<<"Conratulation !"<< endl<<"you are eligble for PAN card"<<endl;
+    if (num % 2 == 0)
+    {
+
+        cout << num << " is a even number" << endl;
     }
-    else{
-        cout<<"Sorry"<<endl<<"you are not eligble for PAN card"<<endl;
+
+    else
+    {
+        cout << num << " is a odd number" << endl;
     }
-
-
-
-
-
 
     return 0;
 };
