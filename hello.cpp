@@ -3,32 +3,27 @@ using namespace std;
 
 int main()
 {
-    int marks;
+    int a, b, c;
 
-    cout << "Enter your marks :";
-    cin >> marks;
+    cout << "Enter 3  numbers :" << endl;
 
-    if (marks >= 95 || marks <= 100)
-    {
-        cout << "grade : A++" << endl;
-    }
+    cout << "Enter a :";
+    cin >> a;
 
-    else if (marks >= 80)
-    {
-        cout << "grade : A+" << endl;
-    }
+    cout << "Enter b :";
+    cin >> b;
 
-    else if (marks >= 70)
+    cout << "Enter c :";
+    cin >> c;
+
+    if (a > b)
     {
-        cout << "grade : A" << endl;
-    }
-    else if (marks >= 60)
-    {
-        cout << "grade : B+" << endl;
+        cout << a << " is the larger then" << b << endl;
     }
     else
     {
-        cout << "Fail" << endl;
+        cout << b << "is the larger then" << a << endl;
     }
+
     return 0;
 };
