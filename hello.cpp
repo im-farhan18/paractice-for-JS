@@ -3,14 +3,27 @@ using namespace std;
 
 int main()
 {
-    int a,b;
+    int day;
+    cout<<"Enter the day number :";
+    cin>>day;
 
-    cout<<"Enter two Numbers :";
-    cin>>a;
-    cin>>b;
-
-    int largest = a >= b ? a:b;
-    cout<<"largest is :"<<largest<<endl;
+    switch (day) {
+        case 1: cout<<"Monday"<<endl;
+        break;
+        case 2: cout<<"Tuesday"<<endl;
+        break;
+        case 3: cout<<"Thusday";
+        break;
+        case 4: cout<<"Wednesday"<<endl;
+        break;
+        case 5: cout<<"Friday"<<endl;
+        break;
+        case 6: cout<<"Saturday"<<endl;
+        break;
+        case 7: cout<<"Sunday"<<endl;
+        break;
+        default : cout<<"Invalid"<<endl;
+    }
 
     return 0;
 };
