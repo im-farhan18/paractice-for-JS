@@ -3,26 +3,42 @@ using namespace std;
 
 int main()
 {
-    int day;
-    cout<<"Enter the day number :";
-    cin>>day;
+    int a, b;
+    char op;
 
-    switch (day) {
-        case 1: cout<<"Monday"<<endl;
-        break;
-        case 2: cout<<"Tuesday"<<endl;
-        break;
-        case 3: cout<<"Thusday";
-        break;
-        case 4: cout<<"Wednesday"<<endl;
-        break;
-        case 5: cout<<"Friday"<<endl;
-        break;
-        case 6: cout<<"Saturday"<<endl;
-        break;
-        case 7: cout<<"Sunday"<<endl;
-        break;
-        default : cout<<"Invalid"<<endl;
+    cout << "Enter a : ";
+    cin >> a;
+
+    cout << "Enter b : ";
+    cin >> b;
+
+    cout << "Enter operator : ";
+    cin >> op;
+
+    // Calculator
+    if (op == '+')
+    {
+        cout << "a + b = " << (a + b) << endl;
+    }
+
+    else if (op == '-')
+    {
+        cout << "a - b = " << (a - b) << endl;
+    }
+
+    else if (op == '*')
+    {
+        cout << "a * b = " << (a * b) << endl;
+    }
+
+    else if (op == '/')
+    {
+        cout << "a / b = " << (a / b) << endl;
+    }
+
+    else
+    {
+        cout << "Invalid Operator";
     }
 
     return 0;
