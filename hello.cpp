@@ -3,11 +3,12 @@ using namespace std;
 
 int main()
 {
-    int num;
-    for( num = 1 ; num<=50 ;num++){
-        cout << num <<" " ;
+    int n = 5;
+
+    for (int row = 1; row <= n; row++)
+    {
+        cout << "Assalamualaikum world! " << endl;
     }
-    cout << endl;
 
     return 0;
 };
