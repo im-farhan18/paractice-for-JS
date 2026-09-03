@@ -3,16 +3,19 @@ using namespace std;
 
 int main()
 {
-    int n = 3;
+    int n = 10898;
+    int digsum = 0;
 
-    for (int row = 1; row <= n; row++)
+    while (n > 0)
     {
-        for(int col = 1;col<= n;col++)
+        int lastdigit = n % 10;
+        if( lastdigit % 2 != 0)
         {
-            cout << "*";
+            digsum += lastdigit;
         }
-        cout << endl;
+        cout << lastdigit << " ";
+        n = n / 10;
     }
-
+    cout << "Sum of digits: " << digsum << endl;
     return 0;
 };
