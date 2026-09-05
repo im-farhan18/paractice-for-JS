@@ -6,20 +6,14 @@ int main()
 
 {
 
-    int num;
+    int n;
     cout << "Enter the number :" << endl;
-    cin >> num;
+    cin >> n;
+    bool isPrime = true;
 
-    for (int i = 2; i >= num -1 ; i++)
-
-    if ( num % i == 0 ) {
-         int fact =  fact* i;
-        cout << i << " is a factorial of NUMber :"<< endl;
-    }
-    else {
-        cout <<"*"<<endl;
+    if (int i = 2; i<= n-1; i++){
+        if()
     }
 
-
-    return 0;
+        return 0;
 };
