@@ -5,11 +5,11 @@ using namespace std;
 int main()
 
 {
+    int n = 4;
 
-    int n;
-    cout<< "Enter a number :"<<endl;
-    cin>>n;
-    
+    for (int i = 1; i <= n; i++){
+        
+    }
 
-        return 0;
+    return 0;
 };
