@@ -11,9 +11,9 @@ int main()
 
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= (n-i); j++)
         {
-            cout << " *";
+            cout << "* ";
         }
         cout << endl; 
     }
@@ -24,13 +24,14 @@ int main()
 /*  
 output :
 
-Enter a number :6
+Enter a number :8
 
- *
- * *
- * * *
- * * * *
- * * * * *
- * * * * * *
+* * * * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
 
  */
