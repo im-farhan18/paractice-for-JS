@@ -8,14 +8,24 @@ int main()
     int n;
     cout << "Enter a number :";
     cin >> n;
-    char ch= 'A';
 
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++){
-            cout<<ch++;
+        cout << "*";
+
+        for (int j = 1; j <= n - 1; j++)
+        {
+            if (i == 1 || i == n)
+            {
+                cout << " * ";
+            }
+            else
+            {
+                cout << "   ";
+            }
         }
-        cout<<endl;
+
+        cout << "*" << endl;
     }
 
     return 0;
@@ -24,10 +34,14 @@ int main()
 /*
 output :
 
-Enter a number :4
-A
-BC
-DEF
-GHIJ
+Enter a number :8
+* *  *  *  *  *  *  * *
+*                     *
+*                     *
+*                     *
+*                     *
+*                     *
+*                     *
+* *  *  *  *  *  *  * *
 
  */
