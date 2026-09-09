@@ -5,7 +5,23 @@ using namespace std;
 int main()
 
 {
-    int n = 10;
+    int n = 5;
+
+    for (int i = n; i >= 1; i--)
+    {
+        // Spaces
+        for (int j = 1; j <= n - i; j++)
+        {
+            cout << " ";
+        }
+        // Stars
+        for (int j = 1; j <= 2 * i - 1; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
 
     // OUTER LOOP
     for (int i = 1; i <= n; i++)
@@ -23,20 +39,7 @@ int main()
         cout << endl;
     }
 
-    for (int i = n; i >= 1; i--)
-    {
-        // Spaces
-        for (int j = 1; j <= n - i; j++)
-        {
-            cout << " ";
-        }
-        // Stars
-        for (int j = 1; j <= 2 * i - 1; j++)
-        {
-            cout << "*";
-        }
-        cout << endl;
-    }
+    
 
     return 0;
 };
