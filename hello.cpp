@@ -5,7 +5,7 @@ using namespace std;
 int main()
 
 {
-    int n = 30;
+    int n = 10;
 
     // OUTER LOOP
     for (int i = 1; i <= n; i++)
