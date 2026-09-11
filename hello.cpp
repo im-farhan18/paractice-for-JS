@@ -2,25 +2,24 @@
 #include <cmath>
 using namespace std;
 
-int sum(int a, int b)
-{
-      cout << a + b << endl;
-      return a + b;
+bool isPrime(int n){
+      if(n == 1){
+            return false;
+      }
+      for(int i = 2; i*i<=n; i++){
+            if( n % i == 0){
+                return false;  
+            }
+      }
+      return true;
+
 }
 
-double sum(double a, double b)
-{
-      cout << a + b << endl;
-      return a + b;
-}
+void 
 
 int main()
 {
 
-      sum(1, 2);
-      sum(4, 6);
-      sum(131, 222);
-      sum(2.51, 2.34);
-
+      cout << isPrime(11);
       return 0;
 }
