@@ -2,24 +2,22 @@
 #include <cmath>
 using namespace std;
 
-bool isPrime(int n){
-      if(n == 1){
-            return false;
+void largnum(int a, int b, int c){
+      if(a > b && a > c){
+            cout<< a <<" = is lagest number  = a "<<endl;
       }
-      for(int i = 2; i*i<=n; i++){
-            if( n % i == 0){
-                return false;  
-            }
+      else if(b > c ){
+            cout<<b <<" = is largest number  =  b"<<endl;
       }
-      return true;
-
+      else {
+            cout<<c<<" = is largest number =   c"<<endl;
+      }
+      
 }
-
-void 
 
 int main()
 {
 
-      cout << isPrime(11);
+      largnum(12 , 5 , 24);
       return 0;
 }
