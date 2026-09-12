@@ -2,15 +2,23 @@
 #include <cmath>
 using namespace std;
 
-char nextchar(char c)
+void binTOdec(int binNum)
 {
-      cout << "the next alphabet after " << c << " is : " << endl;
-      return c + 1;
+      int n = binNum;
+      int dec = 0;
+      int pow = 1;
+
+      while (n > 0)
+      {
+            int lastdigit = n % 10;
+            dec += lastdigit * pow;
+            pow = pow * 2;
+            n = n / 10;
+      }
 }
 
 int main()
 {
 
-      cout << nextchar('D');
       return 0;
 }
