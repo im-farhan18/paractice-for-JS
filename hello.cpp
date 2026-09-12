@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-void binTOdec(int binNum)
+void binTOdec(long int binNum)
 {
       int n = binNum;
       int dec = 0;
@@ -15,10 +15,13 @@ void binTOdec(int binNum)
             pow = pow * 2;
             n = n / 10;
       }
+
+      cout << dec << endl;
 }
 
 int main()
 {
 
+      binTOdec(11630110);
       return 0;
 }
