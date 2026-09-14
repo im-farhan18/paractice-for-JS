@@ -2,28 +2,17 @@
 #include <cmath>
 using namespace std;
 
-void changeA(int *ptr)
-{
-      *ptr = 20;
-      cout << *ptr << endl;
-}
-
 int main()
 {
-      int a = 10;
-      int &b = a;
+      int a = 5, y = 10;
 
-      cout << b << endl
-           << endl;
+      int *ptr1 = &a, *ptr2 = &y;
 
-      b = 12;
-      cout << b << endl;
-      cout << a << endl
-           << endl;
+      ptr2 = ptr1;
 
-      a = 15;
-      cout << a << endl;
-      cout << b << endl;
+      cout << ptr1 << endl;
+      cout << ptr2 << endl;
+      cout << &a << endl;
 
       return 0;
 }
