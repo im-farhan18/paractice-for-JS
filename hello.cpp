@@ -4,15 +4,20 @@ using namespace std;
 
 int main()
 {
-      int a = 5, y = 10;
 
-      int *ptr1 = &a, *ptr2 = &y;
+      string s = "1";
+      int n = s.size();
+      int dec = 0;
+      int p = 0;
 
-      ptr2 = ptr1;
+      for (int i = n - 1; i >= 0; i--)
+      {
+            cout << "Currently at " << i << "th position. power to mulitieply is 2^" << p << endl;
+            dec += s[i] * pow(2, p);
+            p++;
+      }
 
-      cout << ptr1 << endl;
-      cout << ptr2 << endl;
-      cout << &a << endl;
+      cout << dec << endl;
 
       return 0;
 }
