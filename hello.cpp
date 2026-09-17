@@ -5,16 +5,14 @@ using namespace std;
 int main()
 {
 
-      int marks[] = {1, 2, 3, 4, 5};
-      cout << marks[0] << endl;
-      cout << marks[1] << endl;
+      int marks[5] = {1, 2, 3, 4, 5};
+      int lenth = sizeof(marks) / sizeof(int);
 
-      cout << marks[2] << endl;
-
-      cout << marks[3] << endl;
-
-      cout << marks[4] << endl;
-      cout << marks[6] << endl;
+      for (int i = 0; i <= lenth - 1; i++)
+      {
+            cout<<marks[i]<<" ";
+      }
+      cout<<endl;
 
       return 0;
 }
