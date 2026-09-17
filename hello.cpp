@@ -5,19 +5,16 @@ using namespace std;
 int main()
 {
 
-      string s = "1";
-      int n = s.size();
-      int dec = 0;
-      int p = 0;
+      int marks[] = {1, 2, 3, 4, 5};
+      cout << marks[0] << endl;
+      cout << marks[1] << endl;
 
-      for (int i = n - 1; i >= 0; i--)
-      {
-            cout << "Currently at " << i << "th position. power to mulitieply is 2^" << p << endl;
-            dec += s[i] * pow(2, p);
-            p++;
-      }
+      cout << marks[2] << endl;
 
-      cout << dec << endl;
+      cout << marks[3] << endl;
+
+      cout << marks[4] << endl;
+      cout << marks[6] << endl;
 
       return 0;
 }
