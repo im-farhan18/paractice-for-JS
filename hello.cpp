@@ -22,7 +22,7 @@ int main()
             }
       }
       cout << "largest in array = " << max << endl;
-      cout << "smallest in array = " << max << endl;
+      cout << "smallest in array = " << min << endl;
 
       return 0;
 }
