@@ -3,12 +3,17 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int a = 10;
 
-    cout << "Enter a number: ";
-    cin >> n;
+    int *b = &a;
+    // cout<< &a <<endl<<b<<endl;
 
-cout<<&n <<endl;
+    float pi = 3.14159;
+    float *c = &pi;
+
+    // cout<<&pi <<endl<<c<<endl;
+    cout << "int = " << sizeof(a) << endl;
+    cout << "float = " << sizeof(c);
 
     return 0;
 }
