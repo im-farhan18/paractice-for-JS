@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
+void change (int *a ){
+
+    *a += 20 ;
+    cout<<*a <<endl;
+
+}
 int main()
 {
     int a = 10;
+    change(&a);
 
-    int *b = &a;
-    // cout<< &a <<endl<<b<<endl;
+    cout<<a<<endl;
 
-    float pi = 3.14159;
-    float *c = &pi;
-
-    // cout<<&pi <<endl<<c<<endl;
-    cout << "int = " << sizeof(a) << endl;
-    cout << "float = " << sizeof(c);
 
     return 0;
 }
