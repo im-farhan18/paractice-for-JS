@@ -1,20 +1,21 @@
 #include <iostream>
 using namespace std;
 
-void change (int &a ){
-a =20;
-cout<<a<<endl;
+void change (int a, int b ){
+  int temp = a;
+   a = b;
+   b = temp;
 
+cout<<" a = "<<a<<endl;
+cout<<" b = "<<b<<endl;
+cout<<" temp = "<<temp<<endl;
 }
 int main()
 {
-      int a = 10;
-    change(a);
-  
-    // int &b = a;
-    // b = 25;
-    // cout<<b<<endl;
-    cout<<a<<endl;
+  int a = 10,b = 20;
+  cout<<"main-function  a  = "<<a<<endl;
+  cout<<"main-function  b  = "<<b<<endl;
+      change(a , b);
   
 
     return 0;
