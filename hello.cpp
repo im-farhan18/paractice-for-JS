@@ -17,6 +17,9 @@ int main()
   cout << "main-function  a  = " << a << endl;
   cout << "main-function  b  = " << b << endl;
   change(a, b);
+  cout<<endl;
+  cout<<" a = "<<a<<endl;
+  cout<<" b = "<<b<<endl;
 
   return 0;
 }
