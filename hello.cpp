@@ -4,13 +4,12 @@ using namespace std;
 int main()
 {
 
-  int marks[] = {1, 3, 2, 4};
-  // cout << marks[0] << endl;
-  // cout << marks[2] << endl;
-  // cout << marks[1] << endl;
-  // cout << marks[3] << endl;
+int arr[5] = { 5, 3, 7,1 ,2 };
+int n = sizeof(arr) / sizeof (int);
 
-  cout << sizeof(marks) / sizeof(int) << endl;
+for(int i = 0 ; i < n ; i++){
+  cout << arr[i]<<" ";
+}
 
   return 0;
 }
