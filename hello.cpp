@@ -15,17 +15,14 @@ int main()
   int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int n = sizeof(arr) / sizeof(int);
 
-  int copy[n];
-  for (int i = 0; i < n; i++)
-  {
-    int j = n - i - 1;
-    copy[i] = arr[j];
-  }
+int start = 0, end = n-1;
 
-  for (int i = 0; i < n; i++)
-  {
-    arr[i] = copy[i];
-  }
+while(start < end ){
+swap(arr [start],arr [end]);
+  start++;
+  end--;
 
   reversearray(arr, n);
+}
+return 0;
 }
