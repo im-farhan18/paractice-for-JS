@@ -1,24 +1,31 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int *arr, int n, int key)
+void reversearray(int *arr, int n)
 {
   for (int i = 0; i < n; i++)
   {
-    if (arr[i] == key)
-    {
-      return i;
-    }
+    cout << arr[i] << ",";
   }
-  return -1;
+  cout << endl;
 }
+
 int main()
 {
-  int arr[] = {3, 1, 5, -1, -4, 7, 10, 7, 4, 9, 11, 14};
+  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int n = sizeof(arr) / sizeof(int);
-  int key;
-cout<<"Enter a key :";
-cin>>key;
-  cout << linearSearch(arr, n, key) << endl;
-  return 0;
+
+  int copy[n];
+  for (int i = 0; i < n; i++)
+  {
+    int j = n - i - 1;
+    copy[i] = arr[j];
+  }
+
+  for (int i = 0; i < n; i++)
+  {
+    arr[i] = copy[i];
+  }
+
+  reversearray(arr, n);
 }
