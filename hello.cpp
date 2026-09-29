@@ -4,7 +4,8 @@ using namespace std;
 int main()
 {
 
-  int arr[] = {3,1,5, -1,-4,-7,-10,7,4,9,11,14,};
+  int arr[] = {3,1,5,-1,-4,7,10, 7,4,9,11,14,
+  };
   int n = sizeof(arr) / sizeof(int);
 
   int min = arr[0];
