@@ -1,28 +1,34 @@
 #include <iostream>
 using namespace std;
 
-int func(int arr[], int n, int key)
+void printarr(int arr[], int n)
 {
 
   for (int i = 0; i < n; i++)
   {
-  if(arr[i] == key){
-    cout<< key<<" is exist on index :"<<i<<endl;
+    cout << arr[i] << ",";
   }
-  }
-  return -1;
-  
+  cout << endl;
 }
 
 int main()
 {
-  int arr[] = {1, 4, 3,  7, 9, 10, 2, 5};
-  int key ;
-  cout<<"enter the key you wanted to find : ";
-  cin>>key;
+  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int n = sizeof(arr) / sizeof(arr[0]);
+  int copy[n];
 
-cout<<  func(arr, n,key)<<endl;
+  for (int i = 0; i < n; i++)
+  {
+    int j = n - i - 1;
+    copy[i] = arr[j];
+  }
+
+  for (int i = 0; i < n; i++)
+  {
+    arr[i] = copy[i];
+  }
+
+  printarr(arr, n);
 
   return 0;
 }
