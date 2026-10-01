@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void func(int arr[], int n, int key)
+int func(int arr[], int n, int key)
 {
 
   for (int i = 0; i < n; i++)
@@ -10,6 +10,7 @@ void func(int arr[], int n, int key)
     cout<< key<<" is exist on index :"<<i<<endl;
   }
   }
+  return -1;
   
 }
 
@@ -21,7 +22,7 @@ int main()
   cin>>key;
   int n = sizeof(arr) / sizeof(arr[0]);
 
-  func(arr, n,key);
+cout<<  func(arr, n,key)<<endl;
 
   return 0;
 }
