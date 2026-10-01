@@ -1,22 +1,27 @@
 #include <iostream>
 using namespace std;
 
-void func(int arr[], int n)
+void func(int arr[], int n, int key)
 {
 
   for (int i = 0; i < n; i++)
   {
-    cout << arr[i] << ",";
+  if(arr[i] == key){
+    cout<< key<<" is exist on index :"<<i<<endl;
   }
-  cout << endl;
+  }
+  
 }
 
 int main()
 {
-  int arr[] = {1, 4, 3, 5, 7, 9, 10, 2, 5};
+  int arr[] = {1, 4, 3,  7, 9, 10, 2, 5};
+  int key ;
+  cout<<"enter the key you wanted to find : ";
+  cin>>key;
   int n = sizeof(arr) / sizeof(arr[0]);
 
-  func(arr, n);
+  func(arr, n,key);
 
   return 0;
 }
